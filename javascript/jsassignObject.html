@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Employee Details</title>
+<script>
+function emp(name,empid,dob,mobile,adress,course){
+this.name=name;
+this.empid=empid;
+this.dob=dob;
+this.mobile=mobile;
+this.adress=adress;
+this.course=course;
+this.changeAdress=changeAdress;
+
+
+
+	function changeAdress(otherAdress){
+		this.adress=otherAdress;
+		}  
+	}
+e=new emp("Rithesh R",21272,"01/02/1999",8971244530,"Mangalore,Karnataka","B.E");
+document.write("1.Employee Name"+e.name+"<br>"+e.empid+" "+e.dob+" "+e.mobile+" "+e.adress+" "+e.course);
+e.changeAdress("Bantwal,Karnataka");
+document.write("<br>"+e.name+" "+e.empid+" "+e.dob+" "+e.mobile+" "+e.adress+" "+e.course);
+
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

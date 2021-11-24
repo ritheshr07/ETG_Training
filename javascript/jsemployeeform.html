@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Forms</title>
+    
+    <script language="javascript" type="text/javascript">
+    function dynamicdropdown(listindex)
+    {
+try{switch (listindex)
+        {
+        case "pu" :
+            document.getElementById("stream").options[0]=new Option("Select stream","");
+            document.getElementById("stream").options[1]=new Option("SCIENCE","science");
+            document.getElementById("stream").options[2]=new Option("COMMERCE","commerce");
+            break;
+        case "engineering" :
+            document.getElementById("stream").options[0]=new Option("Select stream","");
+            document.getElementById("stream").options[1]=new Option("ECE","ece");
+            document.getElementById("stream").options[2]=new Option("CSE","cse");
+            document.getElementById("stream").options[3]=new Option("ISE","ise");
+            break;
+        }
+
+        return true;
+    }catch(err)
+    { alert("Error:"+err);}
+    }
+    /*function validate(){
+        if(document.myform.name.value=="")
+        {
+            alert("please provide Date");
+            document.myform.name.focus();
+            return false;
+        }*/
+        function validate(){
+            var pattern=/^\d{10}$/;
+           
+
+        if(document.myform.mob.value.match(pattern))
+        {
+           
+            return true;
+
+        }
+        else{
+          alert("please Enter 10 digit no!!");
+          return false;
+    }
+}
+    </script>
+    
+</head>
+
+<body>
+    <header align="Center">
+        <h2>Details</h2>
+    </header>
+    <br>
+    <div align="center">
+        
+    <form action="" method="" name="myform" onsubmit="return(validate());">
+
+        <label><b>Emp id:</b></label>
+        <input type="text" name="id" placeholder="Enter your Id" required="required" style="width: 250px;">
+        <br>
+        <br>
+
+        <label><b>Emp Name:</b></label>
+        <input type="text" name="name" placeholder="Enter your name" required="required" style="width: 250px;">
+        <br>
+        <br>
+
+        <br>
+        <br>
+    
+        <label><b>Contact:</b></label>
+        <input type="tel" name="mob" placeholder="Enter number" required="required" style="width: 250px;">
+        <br>
+        <br>
+
+        <label><b>Date of Birth:</b></label>
+        <input type="date" name="name" >
+        <br>
+        <br>
+
+        <div class="category_div" id="category_div">Course:
+        <select id="course" name="course" onchange="javascript: dynamicdropdown(this.options[this.selectedIndex].value);">
+        <option value="">Select course</option>
+        <option value="pu">PU</option>
+        <option value="engineering">ENGINEERING</option>
+        </select>
+    </div>
+    <div class="sub_category_div" id="sub_category_div">Stream:
+        <script type="text/javascript" language="JavaScript">
+        document.write('<select name="stream" id="stream"><option value="">Select stream</option></select>');
+        </script>
+        <noscript>
+        <select id="stream" name="stream">
+            <option value="ece">ECE</option>
+            <option value="cse">CSE</option>
+            <option value="ise">ISE</option>
+        </select>
+        </noscript>
+    </div>
+        
+        <br>
+        <br>
+
+        
+
+        
+        <button>Submit</button>
+
+    </form>
+        
+    </div>
+    <br>
+    
+
+    
+
+</body>
+</html>

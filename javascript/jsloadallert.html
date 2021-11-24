@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+ function load(){ 
+                alert("finished Loading");
+                }
+</script>
+</head>
+
+<body onload="load()">
+ <input type="button" id="btnClick" value="Click Me!!" />
+ <script type="text/javascript">
+document.getElementById("btnClick").addEventListener("click",clicked);
+ function clicked() {
+ alert("Clicked on Button!!!");
+ }
+ </script>
+
+</body>
+</html>

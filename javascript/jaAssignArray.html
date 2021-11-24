@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Array</title>
+</head>
+<script type="text/javascript">
+
+var i;
+var car = new Array();
+car[0] = "Swift";
+car[1] = "Audi";
+car[2] = "BMW";
+car[3] = "Ford";
+car[4] = "Ferrari";
+
+for (i=0;i<car.length;i++) {
+document.write(car[i] + "<br>");
+}
+
+document.write("<br>Reversed Array is: " +car.reverse());
+
+
+document.write("<br> Size of Array is: " +car.length);
+
+car.push("kiwi");
+document.write("<br>Array after push:<br>");
+for (i=0;i<car.length;i++) {
+document.write(car[i] + "<br>");
+}
+car.pop();
+document.write("<br>Array after pop :<br>");
+for (i=0;i<car.length;i++) {
+document.write(car[i] + "<br>");
+}
+car.shift();
+document.write("<br>Array after shift:<br>");
+for (i=0;i<car.length;i++) {
+document.write(car[i] + "<br>");
+}
+car.unshift("Ferrari")
+document.write("<br>Array after unshift:<br>");
+for (i=0;i<car.length;i++) {
+document.write(car[i] + "<br>");
+}
+car.splice(2,0,"Maruti","Alto");
+document.write("<br>Array after splice:<br>");
+for (i=0;i<car.length;i++) {
+document.write(car[i] + "<br>");
+}
+Cars = ["BMW", "Hundai", "Honda", "Maruthi", "Tata", "Mahindra"];
+Slicecar = Cars.slice(1, 4);
+document.write("<br> Slice in Array:"+Slicecar);
+</script>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Removing Paragraphs/element </h1>
+
+    <div>
+        <p id="p1">this is 1st paragraph</p>
+        <p id="p2">this is 2nd paragraph</p>
+        <p id="p3">this is 3rd paragraph</p>
+        <p id="p4">this is 4th paragraph</p>
+        <p id="p5">this is 5th paragraph</p>
+    </div>
+    <button onclick="myFunction()">Remove paragraphs(3rd and 4th)</button>
+    <script>
+        function myFunction(){
+            document.getElementById("p3").remove();
+            document.getElementById("p4").remove();
+        }
+    </script>
+</body>
+</html>

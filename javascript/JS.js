@@ -1,0 +1,1 @@
+	alert("now you are Learning JavaScript");
