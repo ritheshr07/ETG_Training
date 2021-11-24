@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 div.body{
 	text-align: center;
 	border-style: solid;
@@ -19,3 +20,26 @@ footer{
 	border-style: dashed;
 	background: skyblue;
 }
+=======
+div.body{
+	text-align: center;
+	border-style: solid;
+	border-color: black;
+	margin-top: 20px;
+	background: yellow;
+	color:red;
+
+}
+header{
+	font-style: italic;
+	text-align: center;
+	border-style: dashed;
+	background: skyblue;
+}
+footer{
+	font-style: italic;
+	margin-top: 20px;
+	border-style: dashed;
+	background: skyblue;
+}
+>>>>>>> 90b07d6 (assignment)
